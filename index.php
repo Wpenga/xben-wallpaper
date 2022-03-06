@@ -1,3 +1,36 @@
+<!--********************************
+小笨分享站，有你更精彩！！！小老弟，欢迎F12
+◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
+◇◇◇◇◇◇◆◇◇◇◇◇◇◇◆◆◆◆◆◆◆◆◆◆◇◇◇◇◆◆◇◆◆◇◇◇◇◆◆◆◆◆◆◆◆◆◆◆◇◇◆◆◇◇◇◆◇◇◇◇
+◇◇◇◆◇◇◆◇◇◆◇◇◇◆◆◇◆◇◆◆◆◆◇◇◇◇◇◆◆◇◇◆◆◆◇◇◇◇◇◆◆◆◆◆◆◆◆◇◇◆◆◆◆◆◇◆◆◆◆◆
+◇◇◇◆◇◇◆◇◇◆◇◇◇◇◇◇◆◇◆◇◆◆◇◇◇◇◆◆◆◇◇◇◆◆◆◇◇◇◇◆◇◇◇◇◇◆◆◇◇◆◇◇◆◆◇◆◇◇◇◇
+◇◇◆◆◇◇◆◇◇◆◆◇◇◆◆◆◆◆◆◆◆◆◆◆◇◆◆◆◆◆◆◆◆◆◆◆◇◇◇◆◆◆◆◆◆◆◆◇◇◆◆◇◆◇◆◆◆◆◆◇
+◇◇◆◆◇◇◆◇◇◆◆◇◇◇◇◇◇◆◆◆◇◇◇◇◇◆◆◇◇◆◇◇◇◆◆◆◇◇◆◆◆◆◆◆◆◆◆◇◇◆◆◇◆◇◆◇◇◆◆◇
+◇◇◆◇◇◇◆◇◇◇◆◇◇◇◇◇◆◆◆◆◆◇◇◇◇◇◇◇◆◆◇◇◇◆◇◇◇◇◇◇◇◇◇◆◆◆◆◇◇◆◆◇◆◇◆◇◇◇◆◇
+◇◆◆◇◇◇◆◇◇◇◆◆◇◇◆◆◆◇◆◇◆◆◆◇◇◇◇◇◆◆◇◇◇◆◇◇◇◇◇◇◇◇◆◆◆◇◇◇◇◇◆◆◆◇◆◇◇◇◆◇
+◇◆◇◇◇◇◆◇◇◇◆◆◇◆◆◆◆◆◆◆◆◆◆◆◇◇◇◆◆◇◇◇◇◆◇◇◇◆◆◆◆◆◆◆◆◆◆◆◇◇◆◆◆◆◆◇◇◇◆◇
+◇◇◇◆◆◆◆◇◇◇◇◇◇◇◇◇◇◇◆◇◇◇◇◇◇◇◆◆◆◇◆◆◆◆◇◇◇◇◇◇◇◇◇◆◆◇◇◇◇◇◆◆◆◆◆◇◇◆◆◇
+◇◇◇◆◆◆◆◇◇◇◇◇◇◇◇◇◇◇◆◇◇◇◇◇◇◆◆◆◇◇◆◆◆◆◇◇◇◇◇◇◆◆◆◆◆◇◇◇◇◆◆◆◇◇◆◆◆◆◆◇
+◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇◇
+基于孟坤壁纸二次修改制作修改，并添加壁纸搜索功能！　　　　　
+ ********************************-->
+<?php
+/**
+ * @author 小鹏
+ * @GitHub:https://github.com/Wpenga?tab=repositories
+ */
+function is_https() {
+    if ( !empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') {
+        return true;
+    } elseif ( isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
+        return true;
+    } elseif ( !empty($_SERVER['HTTP_FRONT_END_HTTPS']) && strtolower($_SERVER['HTTP_FRONT_END_HTTPS']) !== 'off') {
+        return true;
+    }
+    return false;
+}
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -17,7 +50,6 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-sm xben-nav  navbar-light fixed-top">
     <a class="navbar-brand xben-title" href="http://bizhi.wpeng.cf" >小鹏在线壁纸</a>
     <button class="navbar-toggler xben-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -40,7 +72,6 @@
                     分类壁纸
                 </a>
                 <div class="dropdown-menu xben-dropdown-menu" id="xbenTags">
-
                 </div>
             </li>
             <li class="nav-item">
@@ -54,17 +85,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://notion.wpeng.cf" target="_blank">小鹏博客</a>
             </li>
-
         </ul>
-
     </div>
 </nav>
 <div class="xben-container">
-
     <div class="jigsaw" id="walBox"></div>  <!-- id="walBox" -->
-
     <a id="toolBall" target="_blank" href="javascript:void(0);" class="uptoTop"></a>
-
     <div id="loadmore">小鹏壁纸加载中……</div>
 	<div class="xben-full-img"><img
             src="http://cdn-ali-img-staticbz.shanhutech.cn/bizhi/staticwp/202003/9bd0be8ab5506a7902f36eb4da95ebc1--3977944025.jpg"/>
