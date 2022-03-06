@@ -52,7 +52,7 @@ function is_https() {
 <body>
 
 <nav class="navbar navbar-expand-sm xben-nav  navbar-light fixed-top">
-    <a class="navbar-brand xben-title" href="http://wallpaper.zhouxiaoben.info" >小鹏在线壁纸</a>
+    <a class="navbar-brand xben-title" href="http://bizhi.wpeng.cf" >小鹏在线壁纸</a>
     <button class="navbar-toggler xben-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
