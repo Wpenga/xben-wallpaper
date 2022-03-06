@@ -36,7 +36,7 @@ function is_https() {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>小笨电脑壁纸</title>
+    <title>小鹏电脑壁纸</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php
     if(is_https()){
@@ -52,7 +52,7 @@ function is_https() {
 <body>
 
 <nav class="navbar navbar-expand-sm xben-nav  navbar-light fixed-top">
-    <a class="navbar-brand xben-title" href="http://wallpaper.zhouxiaoben.info" >小笨在线壁纸</a>
+    <a class="navbar-brand xben-title" href="http://wallpaper.zhouxiaoben.info" >小鹏在线壁纸</a>
     <button class="navbar-toggler xben-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -85,7 +85,7 @@ function is_https() {
                    title="金山词霸每日一句壁纸">每日英语</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://zhouxiaoben.info" target="_blank">小笨博客</a>
+                <a class="nav-link" href="https://notion.wpeng.cf/" target="_blank">小鹏博客</a>
             </li>
 
         </ul>
@@ -98,7 +98,7 @@ function is_https() {
 
     <a id="toolBall" target="_blank" href="javascript:void(0);" class="uptoTop"></a>
 
-    <div id="loadmore">小笨壁纸加载中……</div>
+    <div id="loadmore">小鹏壁纸加载中……</div>
 	<div class="xben-full-img"><img
             src="http://cdn-ali-img-staticbz.shanhutech.cn/bizhi/staticwp/202003/9bd0be8ab5506a7902f36eb4da95ebc1--3977944025.jpg"/>
     <button class="horizontal-btn btn btn-primary">横屏显示</button>
