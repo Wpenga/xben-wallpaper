@@ -16,8 +16,8 @@
  ********************************-->
 <?php
 /**
- * @author 小笨
- * @GitHub:https://github.com/water1996/xben-wallpaper
+ * @author 小鹏
+ * @GitHub:https://github.com/Wpenga?tab=repositories
  */
 function is_https() {
     if ( !empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) !== 'off') {
