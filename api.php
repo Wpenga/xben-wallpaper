@@ -59,6 +59,13 @@ function echojson($data)    //json和jsonp通用
     // }
     // else
     // {
-        echo $data;
+//         echo $data;
     // }
+    header('Content-type: application/json');
+    $callback = getParam('callback');
+    if($callback != '') {//输出jsonp格式
+        die(htmlspecialchars($callback).'('.$data.')');
+    } else {
+        die($data);
+    }
 }
